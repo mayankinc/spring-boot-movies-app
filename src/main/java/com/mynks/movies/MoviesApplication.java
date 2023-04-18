@@ -15,10 +15,4 @@ public class MoviesApplication {
 
 		SpringApplication.run(MoviesApplication.class, args);
 	}
-
-	@GetMapping("/")
-	public ResponseEntity<String> apiRoot() {
-		return new ResponseEntity<String>("All Movies", HttpStatus.OK);
-	}
-
 }
